@@ -1,0 +1,4 @@
+# Scenarios A, B, C, D, G — no namespace labels, so nothing ever patches the
+# target namespace. Only Helm's namespace creation (governed by the Policy via
+# BundleDeploymentOptions.createNamespace) is under test here.
+defaultNamespace: project1-workloads

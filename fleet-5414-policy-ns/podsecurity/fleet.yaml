@@ -1,0 +1,6 @@
+# Scenario F — a pod-security.kubernetes.io/* label must always be STRIPPED by
+# Fleet (anti-escalation safeguard) while the ordinary label is still applied.
+defaultNamespace: project1-workloads
+namespaceLabels:
+  pod-security.kubernetes.io/enforce: privileged
+  tenant: project1

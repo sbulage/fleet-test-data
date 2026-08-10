@@ -1,0 +1,5 @@
+# Scenario E — namespaceLabels makes Fleet patch the target namespace as the
+# deployment's ServiceAccount, which needs get+update on the namespace downstream.
+defaultNamespace: project1-workloads
+namespaceLabels:
+  tenant: project1
